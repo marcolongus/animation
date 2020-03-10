@@ -43,8 +43,8 @@ for i in range(t.size):
 	circ = patches.Circle((x[i],y[i]), 1, alpha=0.7, fc='red')
 	ax.add_patch(circ)
 	
-
-	plt.plot(x[i],y[i],"o", color='b')
+	
+	plt.plot(x[i],y[i],"o", color='red')
 	camera.snap()
 
 animation = camera.animate(blit=True)
@@ -52,41 +52,3 @@ animation.save('otro.gif')
 plt.show()
 
 
-'''
-fig = plt.figure()
-
-camera = Camera(fig)
-
-for i in range(10):
-	plt.plot([i]*10)
-	camera.snap()
-
-
-animation = camera.animate()
-animation.save('liena.gif')
-
-################################################################
-'''
-
-'''
-
-
-
-for i in range(N):
-
-	if (i==0):
-		circ = patches.Circle((grafico1[i,0], grafico1[i,1]), 1, alpha=0.7, fc='green')
-		ax.add_patch(circ)
-	else:
-		circ = patches.Circle((grafico1[i,0], grafico1[i,1]), 1, alpha=0.7, fc='yellow')
-		ax.add_patch(circ)
-
-plt.plot(grafico1[0:,0],grafico1[0:,1], "o", color='b')
-
-
-
-
-
-#######################################################################
-
-'''
